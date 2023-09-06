@@ -69,6 +69,10 @@ body{
     line-height: 1.4em;
 }
 
+a{
+    text-decoration: none;
+}
+
 .contact{
     padding-top: 40px;
 }
@@ -144,6 +148,42 @@ body{
     position: relative;
     background: #fff;
     padding: 40px;
+}
+
+.qr .image{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 200px;
+    border-radius: 10%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.qr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.bg{
+    background: #fff;
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+}
+
+.qr .image img{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    object-fit: fill;
+    width: 200px;
+    height: 200px;
 }
 
 .about{
