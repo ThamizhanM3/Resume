@@ -48,6 +48,7 @@ body{
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
+    transition: 0.5s;
 }
 
 .profile .image img{
@@ -57,6 +58,14 @@ body{
     object-fit: fill;
     width: 200px;
     height: 248px;
+}
+
+.profile .image:hover{
+    border-radius: 5%;
+    img{
+        width: 200px;
+        height: 248px;
+    }
 }
 
 .profile h2{
@@ -69,6 +78,10 @@ body{
     line-height: 1.4em;
 }
 
+.profile h2:hover{
+    color: #03a9f4;
+}
+
 a{
     text-decoration: none;
 }
@@ -77,12 +90,34 @@ a{
     padding-top: 40px;
 }
 
+.contact .title span{
+    display: flex;
+
+}
+
+.contact .title h6{
+    display: flex;
+    padding-left: 8px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #03a9f4;
+}
+
 .title{
     color: #fff;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
     margin-bottom: 20px;
+}
+
+.contact ul li a .text{
+    text-shadow: #03a9f4 3px 3px 4px;
+}
+
+.contact ul li a .text:hover{
+    text-shadow: #fff 5px 5px 5px;
 }
 
 .contact ul{
@@ -94,6 +129,12 @@ a{
     list-style: none;
     margin: 10px 0;
     cursor: pointer;
+}
+
+.contact ul li:hover{
+    .text{
+        color: #03a9f4;
+    }
 }
 
 .contact ul li .icon{
@@ -166,6 +207,7 @@ a{
     justify-content: center;
     align-items: center;
     padding-top: 20px;
+    height: 20%;
 }
 
 .bg{
@@ -175,10 +217,21 @@ a{
     border-radius: 10%;
 }
 
+.qr .bg .scan-text{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.qr .bg .scan-text h5{
+    color: #03a9f4;
+}
+
 .qr .image img{
     display: flex;
     justify-content: right;
-    align-items: center;
+    align-items: center; 
     top: 0px;
     left: 0px;
     object-fit: fill;
@@ -187,7 +240,7 @@ a{
 }
 
 .about{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .about:last-child{
@@ -201,6 +254,19 @@ a{
     margin-bottom: 10px;
 }
 
+.about .title2 span{
+    display: flex;
+}
+
+.about .title2 h6{
+    display: flex;
+    padding-left: 8px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #2a7da2;
+}
+
 p{
     color: #333;
 }
@@ -209,6 +275,19 @@ p{
     display: flex;
     flex-direction: row;
     margin: 20px 0;
+}
+
+.about .box:hover{
+    & .year_company h5{
+        color: #03a9f4;
+        text-shadow: #848c90 5px 5px 5px;
+    }
+    & .text{
+        & p{
+            color: #03a9f4;
+        }
+        text-shadow: #848c90 5px 5px 5px;
+    }
 }
 
 .about .box .year_company{
